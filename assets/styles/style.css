@@ -1,0 +1,65 @@
+:root {
+  --primary-color: #596d48;
+  --light-color: #e5e7eb;
+  --dark-color: #333;
+  --focus-color: #1e73f3;
+  --error-color: rgb(240, 39, 39);
+}
+@font-face {
+  font-family: 'norsebold';
+  src: url('../fonts/norse-bold-webfont.woff2') format('woff2'),
+    url('../fonts/norse-bold-webfont.woff') format('woff'),
+    url('../fonts/Norse-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  cursor: pointer;
+}
+ul,ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+p {
+  margin: 0;
+
+}
+
+/* Actual CSS */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.left {
+  background-image: url('../images/cosmos-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.logo-text {
+  font-family: 'norsebold',Arial, sans-serif;
+  font-size: 3rem;
+  color: white;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <title>Signup Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="logo-bg">
+        <img src="./assets/images/odin-logo.png" alt="logo" class="logo">
+        <span class="logo-text">ODIN</span>
+      </div>
+    </div>
+    <div class="right">
+      <div class="top-text">
+        <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+          Sign up <em>now</em> to get started.
+        </h2>
+        <h2>You <em>know</em> you want to.</h2>
+      </div>
+      <form action="#" class="form">
+        <h3>Let's do this!</h3>
+        <div class="first-name">
+          <label for="first-name">FIRST NAME</label>
+          <input type="text" name="first-name" id="first-name" minlength="2" maxlength="20" placeholder="John" required>
+        </div>
+        <div class="last-name">
+          <label for="last-name">LAST NAME</label>
+          <input type="text" name="last-name" id="last-name" minlength="2" maxlength="20" placeholder="Doe" required>
+        </div>
+        <div class="email">
+          <label for="email">EMAIL</label>
+          <input type="email" name="email" id="email" placeholder="johndoe@example.com" required>
+        </div>
+        <div class="phone-number">
+          <label for="phone">PHONE NUMBER</label>
+          <input type="tel" name="phone" id="phone" pattern="/^\+7\(\d{3}\) \d{3}-\d{2}-\d{2}/gs" placeholder="+7 (777) 777-77-77" minlength="11" required>
+        </div>
+        <div class="password">
+          <label for="password">PASSWORD</label>
+          <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" required>
+          <span class="password-error">* Passwords do not match</span>
+        </div>
+        <div class="confirm-password">
+          <label for="confirm-password">CONFIRM PASSWORD</label>
+          <input type="password" name="confirm-password" id="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8"
+            required>
+        </div>
+      </form>
+      <div class="bottom-text">
+        <button type="submit" class="submit-btn">Create Account</button>
+        <p>Already have an account? <a href="#" class="login-link">Log In</a></p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="./assets/js/validate.js" defer></script>
+</body>
+</html>
